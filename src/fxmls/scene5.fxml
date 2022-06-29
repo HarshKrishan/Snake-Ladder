@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="borderpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="855.0" prefWidth="1377.0" styleClass="bodybg" stylesheets="@../../../images/style.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.Scene5Controller">
+    <center>
+        <AnchorPane prefHeight="923.0" prefWidth="1346.0" BorderPane.alignment="CENTER">
+            <children>
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#00de1c" height="651.0" layoutX="451.0" layoutY="71.0" stroke="BLACK" strokeType="INSIDE" width="649.0">
+                    <effect>
+                        <Glow level="1.0" />
+                    </effect>
+                </Rectangle>
+                <ImageView fx:id="board" fitHeight="640.0" fitWidth="765.0" layoutX="457.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../images/snl.png" />
+                    </image>
+                    <effect>
+                        <ColorAdjust />
+                    </effect>
+                </ImageView>
+                <ImageView fitHeight="61.0" fitWidth="64.0" layoutX="466.0" layoutY="683.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../images/arrow.png" />
+                    </image>
+                    <effect>
+                        <Glow level="0.62" />
+                    </effect>
+                </ImageView>
+                <ImageView fitHeight="91.0" fitWidth="516.0" layoutX="535.0" layoutY="773.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../images/playbar.png" />
+                    </image>
+                    <effect>
+                        <Glow level="0.52" />
+                    </effect>
+                </ImageView>
+                <ImageView fx:id="exit5" fitHeight="49.0" fitWidth="59.0" layoutX="72.0" layoutY="93.0" onMouseClicked="#exit5" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../images/U.png" />
+                    </image>
+                    <effect>
+                        <Glow level="0.61" />
+                    </effect>
+                </ImageView>
+                <Label fx:id="text1" contentDisplay="CENTER" layoutX="653.0" layoutY="804.0" textFill="#fffbfb">
+                    <font>
+                        <Font name="MS Outlook" size="22.0" />
+                    </font></Label>
+                <Label fx:id="text2" contentDisplay="CENTER" layoutX="881.0" layoutY="806.0" textFill="WHITE">
+                    <font>
+                        <Font name="MS Outlook" size="22.0" />
+                    </font></Label>
+                <ImageView fx:id="editview" fitHeight="65.0" fitWidth="190.0" layoutX="908.0" layoutY="333.0" pickOnBounds="true" preserveRatio="true">
+                    <effect>
+                        <ColorAdjust />
+                    </effect>
+                </ImageView>
+            <ImageView fitHeight="48.0" fitWidth="37.0" layoutX="457.0" layoutY="96.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/flaggg.png" />
+               </image>
+            </ImageView>
+                <ImageView fx:id="smallpawn1" fitHeight="42.0" fitWidth="35.0" layoutX="551.0" layoutY="791.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../images/redPawn.png" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="smallpawn2" fitHeight="42.0" fitWidth="35.0" layoutX="986.0" layoutY="797.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../images/yellowPawn.png" />
+                    </image>
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                </ImageView>
+                <ImageView fx:id="bigpawn1" fitHeight="91.0" fitWidth="54.0" layoutX="439.0" layoutY="705.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../images/redPawn.png" />
+                    </image>
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                </ImageView>
+                <ImageView fx:id="bigpawn2" fitHeight="72.0" fitWidth="68.0" layoutX="483.0" layoutY="713.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../images/yellowPawn.png" />
+                    </image>
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                </ImageView>
+                <ImageView fx:id="jumpingarrow" fitHeight="80.0" fitWidth="79.0" layoutX="742.0" layoutY="640.0" pickOnBounds="true" preserveRatio="true" />
+                <ImageView fx:id="glow1" fitHeight="241.0" fitWidth="415.0" layoutX="394.0" layoutY="741.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../images/transbg.png" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="glow2" fitHeight="241.0" fitWidth="415.0" layoutX="675.0" layoutY="743.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../images/transbg.png" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="diceimage" fitHeight="49.0" fitWidth="53.0" layoutX="757.0" layoutY="792.0" onMouseClicked="#diceroll" pickOnBounds="true" preserveRatio="true" styleClass="diceimage">
+                    <image>
+                        <Image url="@../../../playerimages/dice6.png" />
+                    </image></ImageView>
+            </children>
+        </AnchorPane>
+    </center>
+</BorderPane>
